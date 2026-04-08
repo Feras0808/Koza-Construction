@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="mb-4">
         <a href="/" className="inline-block">
           <img
-            src="/Koza.png"
+            src="/koza.png"
             alt="Koza Construction Logo"
             className="mx-auto h-40 w-auto"
           />
