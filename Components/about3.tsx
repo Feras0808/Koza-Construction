@@ -33,7 +33,7 @@ export default function About3() {
           }`}
         >
           <Image
-            src="/about3.png"
+            src="/Reda3.jpg"
             alt="Group GM"
             width={420}
             height={520}

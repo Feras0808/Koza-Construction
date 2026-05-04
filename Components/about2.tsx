@@ -29,16 +29,15 @@ export default function About2() {
         }`}
       >
         {/* Image */}
-        <div className="relative flex justify-center">
-          <Image
-            src="/about2.png"
-            alt="Chairman"
-            width={650}
-            height={800}
-            className="object-contain mix-blend-multiply"
-            priority
-          />
-        </div>
+        <div className="relative w-full max-w-[650px] h-[500px] md:h-[800px] mx-auto">
+  <Image
+    src="/Sheikh3.jpg"
+    alt="Chairman"
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
 
         {/* Text */}
         <div className="max-w-xl">
