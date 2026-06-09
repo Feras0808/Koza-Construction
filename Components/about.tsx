@@ -4,7 +4,7 @@ export default function About() {
       <h2 className="text-3xl font-bold mb-6">About Koza Construction</h2>
 
       <p className="text-muted-foreground">
-        Embark on a journey of excellence with Koza Construction Qatar, a leading provider of general contracting services in both public and private sectors. Harnessing the expertise of Koza Construction & Defense Industry, they are committed to delivering innovative, high-quality, and cost-effective solutions at every project stage. With a vision to ascend as a premier contracting company in Qatar, Koza Construction Qatar invites you to experience a seamless blend of professionalism and solutions. Elevate your projects with a partner dedicated to surpassing expectations and setting new standards in the construction industry.
+        Koza Construction Qatar stands as a trusted leader in general contracting, serving both public and private sectors. Backed by the expertise of Koza Construction & Defense Industry, the company is dedicated to delivering innovative, high-quality, and cost-efficient solutions across every stage of a project. Guided by a clear vision to become one of Qatar’s premier contracting companies, Koza Construction Qatar offers clients a seamless blend of professionalism and tailored solutions. Partner with a team committed to exceeding expectations and redefining standards in the construction industry.
       </p>
     </section>
   )

@@ -5,12 +5,14 @@ import { useRef, useEffect, useState } from "react"
 
 export default function Projects() {
   const projects = [
-    { name: "Office Tower", image: "/pr2.jpg" },
+    { name: "Office Towers", image: "/pr2.jpg" },
     { name: "Luxury Villa", image: "/pr3.jpg" },
     { name: "Shopping Mall", image: "/pr.jpg" },
-    { name: "Hotel Resort", image: "/hotel.jpg" }, // fixed image path
-    { name: "Chemical Industry", image: "/pr6.jpg" },
+    { name: "Hotels & Hotel Apartments", image: "/hotel.jpg" },
+    { name: "Chemical Factory", image: "/pr6.jpg" },
     { name: "Cafes & Resturants", image: "/pr8.jpg" },
+    { name: "Residential Apartments", image: "/pr8.jpg" },
+    { name: "Compounds of Villas", image: "/pr8.jpg" },
   ]
 
   const scrollRef = useRef<HTMLDivElement>(null)

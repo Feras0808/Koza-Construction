@@ -1,23 +1,30 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card"
 
 export default function Services() {
-
   const services = [
     {
       title: "Residential Construction",
       image: "/card.png",
+      description:
+        "Building modern, durable, and comfortable homes tailored to your family's needs.",
     },
     {
       title: "Commercial Buildings",
       image: "/card3.png",
+      description:
+        "Delivering high-quality commercial spaces designed to support business growth and efficiency.",
     },
     {
       title: "Industrial Construction",
       image: "/card2.png",
+      description:
+        "Constructing reliable industrial facilities with a focus on safety, functionality, and performance.",
     },
     {
       title: "Project Management",
       image: "/card4.png",
+      description:
+        "Providing end-to-end project coordination to ensure quality, budget control, and timely delivery.",
     },
   ]
 
@@ -33,8 +40,6 @@ export default function Services() {
             key={service.title}
             className="group overflow-hidden rounded-xl border hover:shadow-2xl hover:-translate-y-1 transition duration-300"
           >
-
-            {/* Image */}
             <div className="overflow-hidden">
               <img
                 src={service.image}
@@ -50,10 +55,8 @@ export default function Services() {
             </CardHeader>
 
             <CardContent className="text-sm text-muted-foreground">
-              High-quality construction delivered with professionalism and
-              attention to detail.
+              {service.description}
             </CardContent>
-
           </Card>
         ))}
       </div>

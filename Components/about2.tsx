@@ -50,26 +50,10 @@ export default function About2() {
           </h2>
 
           <p className="text-gray-600 leading-relaxed mb-6">
-            Qatar’s unprecedented development during the last decade has motivated
-            businessmen and entrepreneurs to pursue their business ambitions.
-            Driven by the National Vision 2030, the country has transformed into
-            a field of investment opportunities in multiple sectors. The Government
-            has been committed to encouraging independence from Hydrocarbon
-            resources by seeking more participation and partner support from
-            private sector to diversify and develop the country’s economy. These
-            factors, along with my passion for business triggered by being involved
-            in the family business by my father’s side from a young age, have
-            encouraged me to establish Optimized Holding; a company offering
-            innovative products and services that caters to the evolving and
-            increasingly sophisticated needs of the market.
+           Qatar’s unprecedented development during the last decade has motivated businessmen and entrepreneurs to pursue their business ambitions. Driven by the National Vision 2030, the country has transformed into a field of investment opportunities in multiple sectors. The Government has been committed to encouraging independence from Hydrocarbon resources by seeking more participation and partner support from private sector to diversify and develop the country’s economy. These factors, along with my passion for business triggered by being involved in the family business by my father’s side from a young age, have encouraged me to establish Optimized Holding; a company offering innovative products and services that caters to the evolving and increasingly sophisticated needs of the market.
           </p>
 
-          <a
-            href="#"
-            className="text-[#b68a2c] font-semibold hover:underline"
-          >
-            Read More
-          </a>
+          
         </div>
       </div>
     </section>

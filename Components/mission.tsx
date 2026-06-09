@@ -7,9 +7,9 @@ import { useState, useEffect } from "react"
 
 export default function Mission() {
   const stats = [
-    { label: "Clients", value: 1000 },
-    { label: "Projects Completed", value: 85 },
-    { label: "Years of Experience", value: 10 },
+    { label: "Clients", value: 300 },
+    { label: "Projects Completed", value: 60 },
+    { label: "Years of Experience", value: 9 },
   ]
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 })
@@ -37,7 +37,7 @@ export default function Mission() {
       <div className="relative max-w-5xl mx-auto text-center mb-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
         <p className="text-white/80">
-          Our mission is to provide superior construction services by consistently improving the quality of our work, enhancing the skills of our team, and delivering projects that exceed our clients' expectations. We aim to forge lasting relationships with our clients through reliability, integrity, and exceptional performance.
+         Our mission is to provide superior construction services by consistently improving the quality of our work, enhancing the skills of our team, and delivering projects that exceed our clients' expectations. We aim to forge lasting relationships with our clients through reliability, integrity, and exceptional performance.
         </p>
       </div>
 
