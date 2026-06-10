@@ -77,10 +77,6 @@ export default function Projects() {
                 alt={project.name}
                 className="h-48 w-full object-cover rounded-2xl mb-4"
               />
-              <h3 className="font-bold text-xl text-[#d4af37]">{project.name}</h3>
-              <p className="text-gray-300 mt-2">
-                Description of {project.name} goes here. Replace with real content.
-              </p>
             </CardContent>
           </Card>
         ))}
