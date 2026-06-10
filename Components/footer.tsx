@@ -11,7 +11,7 @@ export default function Footer() {
           <Phone size={24} />
         </a>
 
-        <a href="mailto:mood.youssef@optimizedholding.com.qa" className="hover:text-orange-500 transition">
+        <a href="mailto:mohd.youssef@optimizedholding.com.qa" className="hover:text-orange-500 transition">
           <Mail size={24} />
         </a>
 
