@@ -11,8 +11,8 @@ export default function Projects() {
     { name: "Hotels & Hotel Apartments", image: "/hotel.jpg" },
     { name: "Chemical Factory", image: "/pr6.jpg" },
     { name: "Cafes & Resturants", image: "/pr8.jpg" },
-    { name: "Residential Apartments", image: "/pr8.jpg" },
-    { name: "Compounds of Villas", image: "/pr8.jpg" },
+    { name: "Residential Apartments", image: "/Apartments.jpg" },
+    { name: "Compounds of Villas", image: "/Villas.jpg" },
   ]
 
   const scrollRef = useRef<HTMLDivElement>(null)
