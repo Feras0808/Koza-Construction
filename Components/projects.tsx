@@ -19,7 +19,7 @@ export default function Projects() {
   const sectionRef = useRef<HTMLElement>(null)
   const [inView, setInView] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
-  const scrollSpeed = 1.5 // pixels per frame
+  const scrollSpeed = 1.5
 
   // Detect if section is in view
   useEffect(() => {
@@ -27,24 +27,28 @@ export default function Projects() {
       ([entry]) => setInView(entry.isIntersecting),
       { threshold: 0.5 }
     )
+
     if (sectionRef.current) observer.observe(sectionRef.current)
+
     return () => {
       if (sectionRef.current) observer.unobserve(sectionRef.current)
     }
   }, [])
 
-  // Auto-scroll infinite (duplicate internally)
+  // Auto-scroll infinite
   useEffect(() => {
     let animationFrame: number
 
     const animate = () => {
       if (scrollRef.current && inView && !isPaused) {
         scrollRef.current.scrollLeft += scrollSpeed
+
         const scrollWidth = scrollRef.current.scrollWidth / 2
         if (scrollRef.current.scrollLeft >= scrollWidth) {
           scrollRef.current.scrollLeft -= scrollWidth
         }
       }
+
       animationFrame = requestAnimationFrame(animate)
     }
 
@@ -52,7 +56,6 @@ export default function Projects() {
     return () => cancelAnimationFrame(animationFrame)
   }, [inView, isPaused])
 
-  // Use duplicate only for scrolling logic
   const carouselItems = isPaused ? projects : [...projects, ...projects]
 
   return (
@@ -77,6 +80,10 @@ export default function Projects() {
                 alt={project.name}
                 className="h-48 w-full object-cover rounded-2xl mb-4"
               />
+
+              <h3 className="text-lg font-semibold text-center text-[#d4af37]">
+                {project.name}
+              </h3>
             </CardContent>
           </Card>
         ))}
