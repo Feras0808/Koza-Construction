@@ -35,11 +35,6 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* CTA Button */}
-      <Button className="transition-shadow duration-300 hover:shadow-lg hover:shadow-orange-400/50">
-        Get Quote
-      </Button>
-
     </nav>
   )
 }

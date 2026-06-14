@@ -12,9 +12,15 @@ export default function CTA() {
     Contact Koza Construction today and bring your vision to life.
   </p>
 
-  <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-medium transition">
-    Get a Free Consultation
-  </button>
+  <button
+  onClick={() =>
+    window.location.href =
+      "mailto:mohd.youssef@optimizedholding.com.qa?subject=Free Consultation Request"
+  }
+  className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-medium transition"
+>
+  Get a Free Consultation
+</button>
 
 </section>
   )

@@ -10,9 +10,12 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
+    const form = e.currentTarget
+
     setLoading(true)
 
-    const formData = new FormData(e.currentTarget)
+    const formData = new FormData(form)
 
     const data = {
       name: formData.get("name"),
@@ -29,17 +32,18 @@ export default function Contact() {
         body: JSON.stringify(data),
       })
 
-      setLoading(false)
-
       if (res.ok) {
+        form.reset()
         alert("Message sent successfully!")
-        e.currentTarget.reset()
-      } else {
-        alert("Failed to send message")
+        return
       }
+
+      alert("Failed to send message")
     } catch (error) {
-      setLoading(false)
+      console.error("Contact form error:", error)
       alert("Something went wrong")
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -48,17 +52,30 @@ export default function Contact() {
       <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <Input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
 
-        <Input type="text" name="name" placeholder="Your Name" required />
+        <Input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
 
-        <Input type="email" name="email" placeholder="Email Address" required />
-
-        <Textarea name="message" placeholder="Message" rows={5} required />
+        <Textarea
+          name="message"
+          placeholder="Message"
+          rows={5}
+          required
+        />
 
         <Button type="submit" disabled={loading}>
           {loading ? "Sending..." : "Send Message"}
         </Button>
-
       </form>
     </section>
   )
